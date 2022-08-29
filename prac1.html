@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loginpage">
+      <br /><br />
+      <div class="login--username">
+        Username:<input type="email" class="username" maxlength="10" />
+      </div>
+      <br /><br />
+      <div class="login--pass">
+        Password:
+        <input type="password" class="pass" maxlength="5" /><br /><br />
+      </div>
+      <button type="submit" class="btn--login">submit</button><br /><br />
+    </div>
+    <script>
+      document.querySelector('body').addEventListener('click', function (e) {
+        if (
+          !document.querySelector('.username').value &&
+          e.target === document.querySelector('.pass')
+        )
+          alert('Please Enter Your Username First');
+      });
+      document
+        .querySelector('.btn--login')
+        .addEventListener('click', function () {
+          if (!document.querySelector('.pass').value)
+            alert('Please Enter Your Password');
+        });
+      [
+        document.querySelector('.login--pass'),
+        document.querySelector('.login--username'),
+      ].forEach(mov => mov.textContent.padEnd(10, ''));
+      document.querySelector('.loginpage').style.backgroundColor = 'orangered';
+    </script>
+  </body>
+</html>

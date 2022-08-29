@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body1{
+        background-image: url(snigdha.jpg);
+      }
+      .body2{
+        background-image: url(injection.jpg);
+      }
+      .box {
+        background-color: red;
+        color: yellow;
+        border-radius: 100px;
+        width: 600px;
+        height: 500px;
+        margin-left: 410px;
+        text-align: center;
+        background-image: url(vaccine.jpg);
+      }
+      .box1{
+        background-color: red;
+        color: red;
+        border-radius: 100px;
+        width: 600px;
+        height: 500px;
+        margin-left: 410px;
+        text-align: center;
+        background-image: url(medicine.jpg);
+        background:url(medicine.jpg) no-repeat;
+        background-size: 600px 500px;
+        opacity: 0.85;
+        
+      }
+      .Submit {
+        border-radius: 85px;
+        background-color: yellow;
+      }
+    .body{
+      background-color: green;
+    }
+    .pin{
+      /* background: url(index.jpg) no-repeat; */
+      /* transform: scale(); */
+      opacity: 1;
+      height: 250px;
+      width: 250px;
+      margin-left: 580px;
+    
+    }
+    .boolean{
+      margin-right: 45px;
+    }
+    </style>
+  </head>
+  <body>
+    <img src="index.jpg" class="pin">
+    <br><br><br>
+    <div class="body1">
+    <div class="box">
+      <form action="backend.php"></form>
+      <br />
+      <h3>STORE DETAILS</h3>
+      <br /><br /><br />
+      <div>Owner Name:<input type="Owner Name" name="my Owner Name" /></div>
+      <br />
+      <div>Store Name:<input type="Store Name" name="my Store Name" /></div>
+      <br />
+      <div>Store Type:<input type="Store Type" name="my Store Type" /></div>
+      <br />
+      <div>
+        Active Hours:<input
+          class="Hours"
+          type="text"
+          name="my Time"
+          value="Eg. 12"
+        />
+      </div>
+      <br />
+      <div>
+        <button class="Submit" type="submit">Submit</button>
+      </div>
+    </div>
+    </div>
+    <div class="body2">    <br>
+    <div class="box1">
+      <form action="backend.php"></form>
+      <br />
+      <h3>PATIENT DEATILS</h3>
+      <br /><br /><br />
+      <b><div>First Name:<input type="First Name" name="my First Name" /></div>
+      <br />
+      <div>Last Name:<input type="Last Name" name="my Last Name" /></div>
+      <br />
+      <div class="Radio">
+      Male<input type="radio" class="Male boolean" /><br> female<input type="radio"class="female boolean"/>
+      <br>
+      <div>other<input type="radio" class='other boolean' /> 
+      </div>
+      <br>
+      <div>Age:<input type="Age" name="my Age"></div> 
+      <br>
+      <div>Blood Group:<input type="Blood Group" name=" my Blood Group"></div>
+      <br>
+      Previous Diseases : </b><input
+        class="Hours"
+        type="text"
+        name="my Time"
+        value="Eg. Fever"
+      />
+    </div> 
+      <br>
+      <div><button type="submit" class="Submit">Submit</button></div>
+      </div>
+    </div>
+     <br>
+     <br>
+</body>
+</html>
